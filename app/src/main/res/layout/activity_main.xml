@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtWelcomeId"
+        android:layout_width="302dp"
+        android:layout_height="91dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Please enter a natural number \n between 0 and 999,999,999 "
+        android:textColor="#1F2C73"
+        android:textColorHighlight="#7E1F2C73"
+        android:textColorLink="#571F2C73"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <Button
+        android:id="@+id/submitBtnId"
+        android:layout_width="145dp"
+        android:layout_height="69dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="#B036407C"
+        android:onClick="onSubmitBtn"
+        android:text="submit"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtId"
+        app:layout_constraintStart_toStartOf="@+id/editTxtId"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtId" />
+
+    <EditText
+        android:id="@+id/editTxtId"
+        android:layout_width="216dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#1F2C73"
+        android:drawableTint="#1F2C73"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:foregroundTint="#1F2C73"
+        android:hint="Example: 4"
+        android:inputType="textPersonName"
+        android:textColor="#1F2C73"
+        android:textColorHighlight="#433F51B5"
+        android:textColorHint="#9736407C"
+        android:textColorLink="#1F2C73"
+        android:textCursorDrawable="@drawable/text_cursor"
+        app:layout_constraintEnd_toEndOf="@+id/txtWelcomeId"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcomeId"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcomeId" />
+
+    <TextView
+        android:id="@+id/outputId"
+        android:layout_width="276dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:maxLines="10"
+        android:minLines="1"
+        android:text="TextView"
+        android:textColor="#1F2C73"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtId"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/editTxtId"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtId" />
+
+    <Button
+        android:id="@+id/exitBtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#B036407C"
+        android:text="Exit"
+        app:layout_constraintEnd_toEndOf="@+id/submitBtnId"
+        app:layout_constraintStart_toStartOf="@+id/submitBtnId"
+        app:layout_constraintTop_toBottomOf="@+id/submitBtnId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
